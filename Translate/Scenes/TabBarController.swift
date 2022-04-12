@@ -13,7 +13,7 @@ final class TabBarController: UITabBarController {
         super.viewDidLoad()
        
         //번역화면
-        let translateViewContoller = UIViewController()
+        let translateViewContoller = TranslateViewController()
         translateViewContoller.tabBarItem = UITabBarItem(
             title: "번역",
             image: UIImage(systemName: "mic"),
