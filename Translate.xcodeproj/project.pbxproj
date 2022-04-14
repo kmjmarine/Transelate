@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E522A4382805EDCD002DD998 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = E522A4372805EDCD002DD998 /* Language.swift */; };
+		E524F31328089348009E6F55 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524F31228089348009E6F55 /* Bookmark.swift */; };
+		E524F31528089588009E6F55 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524F31428089588009E6F55 /* UserDefaults+.swift */; };
+		E524F31828089A74009E6F55 /* BookmarkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524F31728089A74009E6F55 /* BookmarkListViewController.swift */; };
+		E524F31A28089EBD009E6F55 /* BookmarkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524F31928089EBD009E6F55 /* BookmarkCollectionViewCell.swift */; };
+		E524F31C2808A17E009E6F55 /* BookmarkTextStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524F31B2808A17E009E6F55 /* BookmarkTextStackView.swift */; };
+		E524F31E2808A376009E6F55 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524F31D2808A376009E6F55 /* Type.swift */; };
 		E5C89C1B2805754200CF3B33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C89C1A2805754200CF3B33 /* AppDelegate.swift */; };
 		E5C89C1D2805754200CF3B33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C89C1C2805754200CF3B33 /* SceneDelegate.swift */; };
 		E5C89C1F2805754200CF3B33 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C89C1E2805754200CF3B33 /* TabBarController.swift */; };
@@ -22,6 +28,12 @@
 
 /* Begin PBXFileReference section */
 		E522A4372805EDCD002DD998 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		E524F31228089348009E6F55 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		E524F31428089588009E6F55 /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		E524F31728089A74009E6F55 /* BookmarkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListViewController.swift; sourceTree = "<group>"; };
+		E524F31928089EBD009E6F55 /* BookmarkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCollectionViewCell.swift; sourceTree = "<group>"; };
+		E524F31B2808A17E009E6F55 /* BookmarkTextStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTextStackView.swift; sourceTree = "<group>"; };
+		E524F31D2808A376009E6F55 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		E5C89C172805754200CF3B33 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C89C1A2805754200CF3B33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5C89C1C2805754200CF3B33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +59,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E524F316280895B6009E6F55 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E5C89C372805807100CF3B33 /* UIColor+.swift */,
+				E524F31428089588009E6F55 /* UserDefaults+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E524F31F2808A438009E6F55 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				E524F31728089A74009E6F55 /* BookmarkListViewController.swift */,
+				E524F31928089EBD009E6F55 /* BookmarkCollectionViewCell.swift */,
+				E524F31B2808A17E009E6F55 /* BookmarkTextStackView.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
+		E524F3202808A448009E6F55 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E522A4372805EDCD002DD998 /* Language.swift */,
+				E524F31228089348009E6F55 /* Bookmark.swift */,
+				E524F31D2808A376009E6F55 /* Type.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E5C89C0E2805754200CF3B33 = {
 			isa = PBXGroup;
 			children = (
@@ -68,12 +109,12 @@
 			children = (
 				E5C89C1A2805754200CF3B33 /* AppDelegate.swift */,
 				E5C89C1C2805754200CF3B33 /* SceneDelegate.swift */,
-				E5C89C372805807100CF3B33 /* UIColor+.swift */,
+				E524F3202808A448009E6F55 /* Models */,
+				E524F316280895B6009E6F55 /* Extension */,
 				E5C89C342805794E00CF3B33 /* Scenes */,
 				E5C89C232805754300CF3B33 /* Assets.xcassets */,
 				E5C89C252805754300CF3B33 /* LaunchScreen.storyboard */,
 				E5C89C282805754300CF3B33 /* Info.plist */,
-				E522A4372805EDCD002DD998 /* Language.swift */,
 			);
 			path = Translate;
 			sourceTree = "<group>";
@@ -83,6 +124,7 @@
 			children = (
 				E5C89C1E2805754200CF3B33 /* TabBarController.swift */,
 				E5C89C3B28058DBF00CF3B33 /* Tranlate */,
+				E524F31F2808A438009E6F55 /* Bookmark */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -175,12 +217,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5C89C1F2805754200CF3B33 /* TabBarController.swift in Sources */,
+				E524F31528089588009E6F55 /* UserDefaults+.swift in Sources */,
 				E5C89C362805796F00CF3B33 /* TranslateViewController.swift in Sources */,
 				E5C89C3A28058DB600CF3B33 /* SourceTextViewController.swift in Sources */,
 				E522A4382805EDCD002DD998 /* Language.swift in Sources */,
 				E5C89C1B2805754200CF3B33 /* AppDelegate.swift in Sources */,
 				E5C89C1D2805754200CF3B33 /* SceneDelegate.swift in Sources */,
+				E524F31E2808A376009E6F55 /* Type.swift in Sources */,
 				E5C89C382805807100CF3B33 /* UIColor+.swift in Sources */,
+				E524F31828089A74009E6F55 /* BookmarkListViewController.swift in Sources */,
+				E524F31328089348009E6F55 /* Bookmark.swift in Sources */,
+				E524F31C2808A17E009E6F55 /* BookmarkTextStackView.swift in Sources */,
+				E524F31A28089EBD009E6F55 /* BookmarkCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
