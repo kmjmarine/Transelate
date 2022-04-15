@@ -16,6 +16,7 @@
 		E524F31E2808A376009E6F55 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = E524F31D2808A376009E6F55 /* Type.swift */; };
 		E54F4D1E280975970040F929 /* TranslateRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54F4D1D280975970040F929 /* TranslateRequestModel.swift */; };
 		E54F4D20280975DE0040F929 /* TranslateResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54F4D1F280975DE0040F929 /* TranslateResponseModel.swift */; };
+		E54F4D222809771B0040F929 /* TranslatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54F4D212809771B0040F929 /* TranslatorManager.swift */; };
 		E5C89C1B2805754200CF3B33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C89C1A2805754200CF3B33 /* AppDelegate.swift */; };
 		E5C89C1D2805754200CF3B33 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C89C1C2805754200CF3B33 /* SceneDelegate.swift */; };
 		E5C89C1F2805754200CF3B33 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C89C1E2805754200CF3B33 /* TabBarController.swift */; };
@@ -38,6 +39,7 @@
 		E524F31D2808A376009E6F55 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		E54F4D1D280975970040F929 /* TranslateRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRequestModel.swift; sourceTree = "<group>"; };
 		E54F4D1F280975DE0040F929 /* TranslateResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateResponseModel.swift; sourceTree = "<group>"; };
+		E54F4D212809771B0040F929 /* TranslatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorManager.swift; sourceTree = "<group>"; };
 		E5C89C172805754200CF3B33 /* Translate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5C89C1A2805754200CF3B33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5C89C1C2805754200CF3B33 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		E54F4D232809772D0040F929 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E54F4D212809771B0040F929 /* TranslatorManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		E5C89C0E2805754200CF3B33 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 			children = (
 				E5C89C1A2805754200CF3B33 /* AppDelegate.swift */,
 				E5C89C1C2805754200CF3B33 /* SceneDelegate.swift */,
+				E54F4D232809772D0040F929 /* Managers */,
 				E524F3202808A448009E6F55 /* Models */,
 				E524F316280895B6009E6F55 /* Extension */,
 				E5C89C342805794E00CF3B33 /* Scenes */,
@@ -129,19 +140,19 @@
 			isa = PBXGroup;
 			children = (
 				E5C89C1E2805754200CF3B33 /* TabBarController.swift */,
-				E5C89C3B28058DBF00CF3B33 /* Tranlate */,
+				E5C89C3B28058DBF00CF3B33 /* Tranlsate */,
 				E524F31F2808A438009E6F55 /* Bookmark */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		E5C89C3B28058DBF00CF3B33 /* Tranlate */ = {
+		E5C89C3B28058DBF00CF3B33 /* Tranlsate */ = {
 			isa = PBXGroup;
 			children = (
 				E5C89C352805796F00CF3B33 /* TranslateViewController.swift */,
 				E5C89C3928058DB600CF3B33 /* SourceTextViewController.swift */,
 			);
-			path = Tranlate;
+			path = Tranlsate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +240,7 @@
 				E5C89C3A28058DB600CF3B33 /* SourceTextViewController.swift in Sources */,
 				E522A4382805EDCD002DD998 /* Language.swift in Sources */,
 				E54F4D20280975DE0040F929 /* TranslateResponseModel.swift in Sources */,
+				E54F4D222809771B0040F929 /* TranslatorManager.swift in Sources */,
 				E5C89C1B2805754200CF3B33 /* AppDelegate.swift in Sources */,
 				E5C89C1D2805754200CF3B33 /* SceneDelegate.swift in Sources */,
 				E524F31E2808A376009E6F55 /* Type.swift in Sources */,
