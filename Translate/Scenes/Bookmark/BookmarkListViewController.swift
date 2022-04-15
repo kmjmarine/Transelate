@@ -40,6 +40,7 @@ final class BookmarkListViewController: UIViewController {
         super.viewWillAppear(animated)
         
         bookmark = UserDefaults.standard.bookmarks
+        collectionView.reloadData()
     }
 }
 

@@ -24,9 +24,6 @@ final class BookmarkCollectionViewCell: UICollectionViewCell {
         stackView.layoutMargins = UIEdgeInsets(top: inset, left: inset, bottom: inset, right: inset)
         stackView.isLayoutMarginsRelativeArrangement = true
         
-        [sourceBookmarkTextStackView, targetBookmarkTextStackView]
-            .forEach { stackView.addArrangedSubview($0) }
-        
         return stackView
     }()
     
@@ -46,12 +43,17 @@ final class BookmarkCollectionViewCell: UICollectionViewCell {
             type: .target
         )
         
+        stackView.subviews.forEach { $0.removeFromSuperview() }
+        
+        [sourceBookmarkTextStackView, targetBookmarkTextStackView]
+            .forEach { stackView.addArrangedSubview($0) }
+        
         addSubview(stackView)
         stackView.snp.makeConstraints {
             $0.edges.equalToSuperview()
             $0.width.equalTo(UIScreen.main.bounds.size.width - 32.0)
         }
         
-        layoutIfNeeded()
+        //layoutIfNeeded()
     }
 }
