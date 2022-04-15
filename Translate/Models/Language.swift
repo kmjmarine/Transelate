@@ -11,7 +11,7 @@ enum Language: String, CaseIterable, Codable {
     case ko
     case en
     case ja
-    case cn = "zn-CN"
+    case cn = "zh-CN"
     
     var title: String {
         switch self {
