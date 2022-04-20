@@ -5,3 +5,21 @@
   Created by kmjmarine on 2022/04/15.
   
 */
+
+// "키값" = "표시될 언어의 값";
+
+// Tapbar Title
+"Translate" = "번역";
+"Bookmark" = "즐겨찾기"; // Naviagation Title too.
+
+// Language Model
+"Korean" = "한국어";
+"English" = "영어";
+"Japanese" = "일본어";
+"Chinese" = "중국어";
+
+// Action Sheet
+"Cancel" = "취소하기";
+
+// Placeholde
+"Enter_text" = "텍스트 입력";
